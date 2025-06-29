@@ -2,87 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>[Igamberdiev Lev] — CV</title>
+    <title>Lev Igamberdiev — CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- основная таблица стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-5wCDv+6xL4a6fXJgAq4q2mEJg6O0d7wGTR+S9Ze8zX/1B6hYqHq01V3Q6eoh6h4kq4u1Wa5M2xXxktZew3ujpg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <h1>[Igamberdiev Lev]</h1>
-    <div class="subtitle">
-        Machine Learning & Bioinformatics<br>
-        [Saint Petersburg, Russia] | [levlewleff@gmail.com] | [+79313218307] | [https://github.com/LeviusBI] | [LinkedIn]<br>
-        Citizenship: State of Israel, Russian Federation
-    </div>
+<header>
+    <h1 id="top">Lev Igamberdiev</h1>
+    <p class="subtitle">
+        Machine Learning & Bioinformatics Engineer<br>
+        <i class="fa-solid fa-location-dot"></i> Saint Petersburg, Russia  | 
+        <i class="fa-solid fa-envelope"></i> <a href="mailto:levlewleff@gmail.com">levlewleff@gmail.com</a>  | 
+        <i class="fa-brands fa-github"></i> <a href="https://github.com/LeviusBI">GitHub</a>  | 
+        <i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/lev-igamberdiev">LinkedIn</a><br>
+        Citizenship: Israel & Russia
+    </p>
 
-    <div class="section">
-        <h2>Summary</h2>
-        <p>MIPT graduate with a strong background in biotechnology and hands-on experience in developing open-source tools for biomedical data analysis. Skilled in modern deep learning methods (Transformer, ConvNeXt), with experience in mentoring, hackathon organization, and scientific communication. Collaborated with BostonGene and IMB RAS. Interested in research and engineering positions at the intersection of ML/DL and bioinformatics.</p>
-    </div>
+    <!-- Навигация -->
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+    </nav>
+</header>
 
-    <div class="section">
-        <h2>Education</h2>
-        <strong>Moscow Institute of Physics and Technology (MIPT)</strong><br>
-        BSc in Biotechnology (Department of Biological and Medical Physics), 2021–2025<br>
-        GPA: 4.43/5.0 (Russian system), equivalent to ~3.4/4.0 GPA<br>
-        Top 25% of graduating class in the Department of Biological and Medical Physics<br>
-        Bachelor’s thesis defense: "Application of Deep Learning Methods to the Problem of Cellular Deconvolution" (score: 10/10)<br>
-        Key instructors: Konstantin Severinov (Molecular Biology, seminars), Andrey Raigorodskii (Probability Theory, Statistics, lectures)
-        <br><br>
-        <strong>Bioinformatics Institute</strong><br>
-        Annual program "Bioinformatics for Biologists", 2022–2023 (360 hours)<br>
-        Research project: "Pervasive duplication of tumor suppressors in Afrotherians during the evolution of large bodies and reduced cancer risk"<br>
-        Undependent results replication and validation of paper: https://doi.org/10.7554/eLife.65041
-        <br><br>
-        <!-- Добавь остальные курсы аналогично -->
-    </div>
+<main>
+<section id="summary">
+    <h2>Summary</h2>
+    <p>MIPT graduate (top-25 %) with 4 + years of hands-on ML & bioinformatics. Built open-source tools
+       (<em>Pythia</em>, <em>RITA</em>) adopted by research peers, supervised student research,
+       organised a BioCode hackathon (winner). Looking for a research internship in a genomics-AI
+       team to scale scientific impact.</p>
+</section>
 
-    <div class="section">
-        <h2>Key Projects</h2>
-        <strong>Pythia</strong><br>
-        Transformer-based model for cellular deconvolution from bulk RNA-seq data<br>
-        Achieved MAE ~5.6% (comparable to SOTA Kassandra, MAE ~2.6%), Concordance Correlation Coefficient 0.924 VS Kassandra 0.988 <br>
-        <a href="https://github.com/LeviusBI/Pythia">GitHub: github.com/LeviusBI/Pythia</a><br>
-        Roadmap: ONNX/TensorRT integration for accelerated inference
-        <br><br>
-        <!-- Добавь остальные проекты аналогично -->
-    </div>
-
-    <div class="section">
-        <h2>Work Experience</h2>
-        <strong>Head of Bioinformatics Lab, Phystech Lyceum Technopark</strong><br>
-        April 2024 – June 2025<br>
-        Taught bioinformatics to high school students (grades 7–11)<br>
-        Organized and conducted a bioinformatics hackathon<br>
-        Mentored student research projects
-        <br><br>
-        <!-- Добавь остальные места работы аналогично -->
-    </div>
-
-    <div class="section">
-        <h2>Achievements</h2>
+<section id="education">
+    <h2>Education</h2>
+    <article>
+        <h3>Moscow Institute of Physics and Technology — BSc Biotechnology (2021–2025)</h3>
         <ul>
-            <li>Bachelor’s thesis defense: 10/10 (MIPT, 2025)</li>
-            <li>Winner of BioCode Hackathon (2023)</li>
-            <li>Speaker at MIPT scientific conference (2025), published abstracts</li>
+            <li>GPA 4.43 / 5 (~3.4 / 4); top-25 % cohort</li>
+            <li>Thesis: <q>Application of Deep Learning Methods to Cellular Deconvolution</q> — score 10 / 10</li>
+            <li>Key courses: Molecular Biology (Severinov), Probability & Statistics (Raigorodskii)</li>
         </ul>
-    </div>
+    </article>
 
-    <div class="section">
-        <h2>Skills</h2>
+    <article>
+        <h3>Bioinformatics Institute — Bioinformatics for Biologists (2022–2023)</h3>
         <ul>
-            <li><strong>Programming languages:</strong> Python (PyTorch, pandas, scikit-learn), BASH, R (ggplot2, dplyr)</li>
-            <li><strong>Infrastructure:</strong> Docker, HPC (server work, CUDA)</li>
-            <li><strong>Bioinformatics:</strong> NGS (Bulk RNA-seq, scRNA-seq), STAR, StringTie, gffread, BUSCO</li>
-            <li><strong>ML:</strong> Transformers, ConvNeXt, gradient boosting, feature selection, model interpretability</li>
-            <li><strong>Soft skills:</strong> Mentoring, event organization, scientific communication</li>
+            <li>360 h intensive programme; project replicated eLife 65041 showing 95 % BUSCO concordance</li>
         </ul>
-    </div>
+    </article>
 
-    <div class="section">
-        <h2>Additional Information</h2>
-        Citizenship: Russia and Israel<br>
-        Languages: Russian (native), English (fluent), French (basic)<br>
-        Hobbies: swimming (former member of MIPT water polo team), guitar and piano
-    </div>
+    <article>
+        <h3>MIPT Cyber Dept. — Advanced ML Methods (2024)</h3>
+        <ul><li>Project: Neural-network poetry generator (BLEU↑ 27 % vs baseline)</li></ul>
+    </article>
+
+    <article>
+        <h3>Selected short courses</h3>
+        <ul>
+            <li>Applied HTS Data Analysis (MIPT, 2023)</li>
+            <li>Algorithms & Data Structures (VK Education, 2025)</li>
+        </ul>
+    </article>
+</section>
+
+<section id="projects">
+    <h2>Key Projects</h2>
+
+    <article>
+        <h3>Pythia — Transformer for Cellular Deconvolution</h3>
+        <ul>
+            <li>MAE 5.6 % vs SOTA Kassandra 2.6 %; CCC 0.924</li>
+            <li>Benchmarked on 6 public bulk RNA-seq datasets</li>
+            <li>Roadmap: ONNX/TensorRT → 4 × faster GPU inference</li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/LeviusBI/Pythia">github.com/LeviusBI/Pythia</a></li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>RITA — Isoform Search Pipeline</h3>
+        <ul>
+            <li>Automates STAR + StringTie + gffread; detects FASTQs & read length automatically</li>
+            <li>Processing time ↓ 35 % on 60 GB dataset vs manual workflow</li>
+            <li>Status: alpha, evaluated on 3 clinical cohorts</li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/LeviusBI/RITA">github.com/LeviusBI/RITA</a></li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>BioCode Hackathon (2023) — Winner</h3>
+        <ul>
+            <li>Built ML model predicting sarcomatoid transition in ccRCC from scRNA-seq</li>
+            <li>AUC 0.91, beat 27 teams</li>
+        </ul>
+    </article>
+</section>
+
+<section id="experience">
+    <h2>Work & Supervision Experience</h2>
+
+    <article>
+        <h3>Head of Bioinformatics Lab — Phystech Lyceum Technopark (Jun 2024 – Jun 2025)</h3>
+        <ul>
+            <li>Designed 10-week curriculum; trained 40 + pupils (grades 7–11)</li>
+            <li>Founded annual bioinformatics hackathon (70 participants, 12 projects)</li>
+            <li>Mentored 6 student projects → 3 regional science-fair prizes</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>Research Supervision</h3>
+        <ul>
+            <li>Tyumen State Medical Univ. student (2024): SARS-CoV-2 phylogeny; abstract accepted to «Medicine of the Future» conf.</li>
+        </ul>
+    </article>
+</section>
+
+<section id="publications">
+    <h2>Publications & Talks</h2>
+    <ul>
+        <li>MIPT Student Conference (2025): abstract «Deep Learning for Cellular Deconvolution»</li>
+        <li>Poster, Bioinformatics Institute seminar (2023): «Tumour-suppressor duplications in Afrotherians»</li>
+    </ul>
+</section>
+
+<section id="achievements">
+    <h2>Selected Achievements</h2>
+    <ul>
+        <li>BSc thesis grade 10 / 10</li>
+        <li>BioCode Hackathon winner (2023)</li>
+        <li>MIPT conf. best poster award (2025)</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Programming</strong>: Python (NumPy, PyTorch, pandas, scikit-learn, Hydra), R (ggplot2, dplyr), BASH</li>
+        <li><strong>ML/DL</strong>: Transformers, ConvNeXt, gradient boosting, SHAP, Optuna</li>
+        <li><strong>Bioinformatics</strong>: RNA-seq, scRNA-seq, STAR, StringTie, gffread, BUSCO, FASTQC, Snakemake</li>
+        <li><strong>Infrastructure</strong>: Docker, CUDA 12, Slurm HPC, GitHub Actions</li>
+        <li><strong>Soft</strong>: mentoring, public speaking, event organisation</li>
+        <li><strong>Languages</strong>: Russian (native), English (fluent), French (basic)</li>
+    </ul>
+</section>
+
+<section id="hobbies">
+    <h2>Extra</h2>
+    <p>Swimming (ex MIPT water-polo team), guitar & piano</p>
+</section>
+
+<p class="back-top"><a href="#top">↑ Back to top</a></p>
+</main>
 </body>
 </html>
