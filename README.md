@@ -1,2 +1,2 @@
 # CV
-Igamberdiev Lev CV
+Igamberdiev (Eidelman) Lev CV
